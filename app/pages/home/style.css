@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css?family=Righteous|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Lato|Palanquin+Dark|Slabo+27px');
+
+@font-face {
+  font-family: 'Galano';
+  src: url('/assets/fonts/Galano Grotesque DEMO Bold.otf');
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+.landing {
+    height: 110vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #00007f; /* for old browsers */
+    background:
+      linear-gradient(
+        rgba(0, 0, 255, 0.5),
+        rgba(0, 0, 255, 0.5)
+      ),
+      /*url(../../assets/meeting.jpg);*/
+      url(../../assets/meeting.jpg);
+
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: center;
+
+}
+
+.arrowDown {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  right: 50%;
+}
+
+.moreText {
+  color: white;
+  font-size: 1em;
+  line-height: 100%;
+  position: absolute;
+  bottom: 5em;
+  left: 50%;
+  right: 50%;
+}
+
+.about {
+  width: 100% !important;
+  height: 75em;
+  margin: 0;
+  padding: 2em;
+
+  /*background-color: #00007f;*/
+}
+
+.aboutImage {
+  width: 12em !important;
+  height: 12em !important;
+}
+
+.menuItem {
+  /*font-family: 'Palanquin Dark';*/
+  color: #ffffff !important;
+  text-color: #ffffff !important;
+  margin-right: 2em !important;
+}
+
+.menu {
+  /*margin-right: 1em !important;*/
+}
+
+.heading {
+  float: left;
+	margin-top: 0.02em;
+  margin-left: 0.5em;
+
+	font-family: 'Righteous', 'Galano', sans-serif;
+	font-size: 8vw;
+  width: 10em;
+  line-height: 100%;
+  word-wrap: break-word;
+	color: white;
+}
+
+.infoCards {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+
+  width: 100%;
+  position: absolute;
+  top: 75%;
+}
+
+.aboutItems {
+  margin-top: 2em !important;
+}
+
+
+
+.gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+51,207cca+100,7db9e8+100 */
+  background: blue; /* Old browsers */
+  background: -moz-linear-gradient(top, blue 0%, #2989d8 51%, #207cca 100%, #7db9e8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, blue 0%,#2989d8 51%,#207cca 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, blue 0%,#2989d8 51%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+/* Styling for responsiveness */
+@media all and (max-width: 100%) {
+
+}
+@media only screen
+and (min-width: 900px) {
+
+}
+@media only screen
+and (min-width: 500px)
+and (max-width: 800px) {
+
+}
