@@ -1,6 +1,7 @@
 {
   "name": "innovative-collab",
   "description": "Site for cultural competency training firm",
+  "homepage": "https://ejmudrak.github.io/innovative-collab",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --progress --colors --content-base app --port 8080",
     "build": "webpack -p --progress --config webpack.production.config.js",
