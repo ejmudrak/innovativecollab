@@ -7,8 +7,16 @@
   src: url('/assets/fonts/Galano Grotesque DEMO Bold.otf');
 }
 
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   overflow-x: hidden !important;
+  background: #00107b;
 }
 
 .landing {
@@ -53,14 +61,9 @@ body {
   width: 100% !important;
   height: 75em;
   margin: 0;
-  color: white;
-
+  padding: 2em;
 
   /*background-color: #00007f;*/
-}
-
-.about h1 { 
-  color: white;
 }
 
 .aboutImage {

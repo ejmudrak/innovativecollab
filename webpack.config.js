@@ -29,18 +29,32 @@ module.exports = {
       {
         test: /\.svg$/,
         loader: "url-loader?limit=10000&mimetype=image/svg+xml"
-      },
+    },
       {
-        // More: https://github.com/tcoopman/image-webpack-loader
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: [
-            'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
-            'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
-        ]
-    }
+        test: /\.jpe?g$/,
+        loader: "url-loader?limit=10000&mimetype=image/jpeg"
+      }
     ],
   },
     resolve: {
     extensions: ['', '.js', '.jsx', '.css']
   },
+
+  devServer: {
+      historyApiFallback: true
+  },
 };
+
+
+/*
+,
+{
+  // More: https://github.com/tcoopman/image-webpack-loader
+  test: /\.(jpe?g|png|gif|svg)$/i,
+  loaders: [
+      'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+      'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
+  ]
+}
+
+*/
