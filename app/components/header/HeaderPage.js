@@ -28,7 +28,7 @@ export default class HeaderPage extends React.Component {
                 <Menu.Menu position='right'>
                   <Menu.Item className={styles.menuItem} content='Home' name='home' active={activeItem === 'home'} onClick={this.handleMenuClick} />
                   <Menu.Item className={styles.menuItem} content='About' name='about' active={activeItem === 'about'} onClick={this.handleMenuClick} />
-                  <Menu.Item className={styles.menuItem} content='Cultural Awareness And Mindfulness' name='awareness-mindfulness' active={activeItem === 'awareness-mindfulness'} onClick={this.handleMenuClick} />
+                  <Menu.Item className={styles.menuItem} content='Cultural Awareness & Mindfulness' name='awareness-mindfulness' active={activeItem === 'awareness-mindfulness'} onClick={this.handleMenuClick} />
                   <Menu.Item className={styles.menuItem} content='Cross-Cultural Efficacy' name='efficacy' active={activeItem === 'efficacy'} onClick={this.handleMenuClick} />
                   <Menu.Item className={styles.menuItem} content='Intersectionality' name='intersectionality' active={activeItem === 'intersectionality'} onClick={this.handleMenuClick} />
                   <Menu.Item className={styles.menuItem} content='Contact' name='contact' active={activeItem === 'contact'} onClick={this.handleMenuClick} />

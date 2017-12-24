@@ -21,7 +21,8 @@
 	text-align: center;
 	position: relative;
 	top: 1em;
-	width: 25%;
+	min-width: 25%;
+	max-width: 95%;
 	height: 2em;
 	border-radius: 100px;
 

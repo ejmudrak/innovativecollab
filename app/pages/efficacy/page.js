@@ -1,6 +1,6 @@
-/* page.js -- home
-Author: Erik Mudrak - Spring 2017 - Senior Seminar project
-Description: Implements home page of web app
+/* page.js -- efficacy
+Author: Erik Mudrak - Fall 2017 
++ Implements Efficacy page of app
 */
 
 // Imports:
@@ -8,19 +8,25 @@ import React from 'react';
 import { browserHistory } from 'react-router';
 import styles from "./style.css";
 import MediaQuery from 'react-responsive';
+import { Container, Divider } from 'semantic-ui-react';
 
 
-export default class EfficacyPage extends React.Component {
+export default class AboutPage extends React.Component {
     constructor(props) {
         super(props);
-        // state = {
-        //     about: false,
-        // }
     }
     render () {
         return (
             <div className={styles.mainCard}>
-                <h1>Efficacy</h1>
+                <div className={styles.pageHeading}>Cross-Cultural Efficiency</div>
+                <div className={styles.headingLine} />
+                <Container text>
+                    <p>Innovative Collaborations is a consulting firm that cultivates cultural competency, diversity, and leadership for teams and work environments.</p>
+                </Container> 
+                <Divider section style={{marginLeft: '15em', marginRight: '15em'}}/>                
+                <Container text>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                </Container> 
             </div>
         );
     }
