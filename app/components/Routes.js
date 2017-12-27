@@ -9,8 +9,12 @@ import EfficacyPage from '../pages/efficacy/page';
 import IntersectionalityPage from '../pages/intersectionality/page';
 import BiasPage from '../pages/bias/page';
 
+
+// HEY! 
+// Trying to build and deploy for Github pages? Make path="innovative-collab/"
+// Trying to develop and build normally? Make path="/"
 export default (
-  <Route path="/" component={App}>
+  <Route path="innovative-collab/" component={App}>
     <IndexRoute component={Home} />
     <Route path="home" component={Home} />
     <Route path="about" component={AboutPage} />
