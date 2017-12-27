@@ -6,7 +6,7 @@ Source: main.js from https://github.com/pheuter/essential-react/tree/master/src
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, browserHistory } from 'react-router';
-import 'semantic-ui-css/semantic.min.css';
+// import 'semantic-ui-css/semantic.min.css';
 
 // Routes
 import Routes from './components/Routes';
