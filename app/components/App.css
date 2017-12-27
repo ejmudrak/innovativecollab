@@ -21,7 +21,6 @@
 	text-align: center;
 	position: relative;
 	top: 1em;
-	min-width: 25%;
 	max-width: 95%;
 	height: 2em;
 	border-radius: 100px;
@@ -42,21 +41,4 @@
 	z-index: -1;
 
 	border-top: 5px solid #ffcd02;
-}
-
-.source {
-	text-align: right;
-	color: gray;
-}
-
-/* Styling for responsiveness */
-@media all and (max-width: 985px) {
-	.pageHeading { 
-		font-size: inherit;
-		height: auto;
-		padding: 10px;
-	 }
-	 .headingLine {
-	 	margin-top: -15px;
-	 }
 }

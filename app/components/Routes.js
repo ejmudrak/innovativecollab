@@ -7,7 +7,7 @@ import AboutPage from '../pages/about/page';
 import AwarenessPage from '../pages/awareness-mindfulness/page';
 import EfficacyPage from '../pages/efficacy/page';
 import IntersectionalityPage from '../pages/intersectionality/page';
-import ContactPage from '../pages/contact/page';
+import BiasPage from '../pages/bias/page';
 
 export default (
   <Route path="/" component={App}>
@@ -17,7 +17,7 @@ export default (
     <Route path="awareness-mindfulness" component={AwarenessPage} />
     <Route path="efficacy" component={EfficacyPage} />
     <Route path="intersectionality" component={IntersectionalityPage} />
-    <Route path="contact" component={ContactPage} />
+    <Route path="bias" component={BiasPage} />
 
   </Route>
 );

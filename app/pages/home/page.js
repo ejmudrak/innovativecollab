@@ -10,7 +10,7 @@ import styles from "./style.css";
 import MediaQuery from 'react-responsive';
 import Logo from '../../assets/logo-color-01.jpg';
 
-import { Card, Button, Container, Divider, Header, Icon, Image, Item, Menu, Segment } from 'semantic-ui-react';
+import { Card, Button, Container, Divider, Header, Icon, Image, Item, List, Menu, Segment } from 'semantic-ui-react';
 
 const aboutItems = [
   {
@@ -19,16 +19,21 @@ const aboutItems = [
     header: 'About',
     description: 'Innovative Collaborations is a consulting firm that cultivates cultural competency, diversity, and leadership for teams and work environments',
     meta: 'Want training? Contact us.',
-    // extra: 'Extra',
   },
 ];
 
 export default class Home extends React.Component {
   constructor(props) {
      super(props);
-    //  this.state = {
-    //      home: false,
-    //  }
+     this.state = { name: '', email: '', submittedName: '', submittedEmail: '' }
+   }
+
+   handleChange = (e, { name, value }) => this.setState({ [name]: value })
+
+   handleSubmit = () => {
+     const { name, email } = this.state
+
+     this.setState({ submittedName: name, submittedEmail: email })
    }
 
   scrollToDiv = (event) => {
@@ -39,40 +44,73 @@ export default class Home extends React.Component {
 
     render() {
 
-        return (
-            <div>
-                <div>
-                    <MediaQuery query='(min-device-width: 1224px)'>
-                      <MediaQuery query='(min-width: 1000px)'>
-                        <div className={styles.infoCards}>
-                          <InfoCard className={styles.card} title="Leadership Training" />
-                          <InfoCard className={styles.card} title="Cultural Competency" />
-                          <InfoCard className={styles.card} title="Team Building" />
-                        </div>
-                      </MediaQuery>
-                    </MediaQuery>
-                    <MediaQuery query='(max-device-width: 1224px)'>
-                      <MediaQuery query='(max-width: 1000px)'>
-                        <div className={styles.moreText}>More</div>
-                        <Icon className={styles.arrowDown} name='long arrow down' color='yellow' size='big'/>
-                      </MediaQuery>
-                    </MediaQuery>
-                  </div>
+      const { name, email, submittedName, submittedEmail } = this.state
 
-                  {/* SECOND SECTION: ABOUT */}
-                  <div id='about' className={styles.about}>
-                    <Header as='h2' icon textAlign='center'>
-                      <Header.Content>
-                        <Divider horizontal><h1>About</h1></Divider>
-                      </Header.Content>
-                    </Header>
-                    <Segment textAlign='center'  size="big" vertical>
-                      Innovative Collaborations is a consulting firm that cultivates cultural competency, diversity, and leadership for teams and work environments.
-                    </Segment>
-                    <Divider />
-                  </div>
-            </div>
-        );
+      return (
+          <div>
+              <div>
+                <MediaQuery query='(min-device-width: 1224px)'>
+                  <MediaQuery query='(min-width: 1000px)'>
+                    <div className={styles.infoCards}>
+                      <InfoCard className={styles.card} title="Leadership Training" />
+                      <InfoCard className={styles.card} title="Cultural Competency" />
+                      <InfoCard className={styles.card} title="Team Building" />
+                    </div>
+                  </MediaQuery>
+                </MediaQuery>
+                <MediaQuery query='(max-device-width: 1224px)'>
+                  <MediaQuery query='(max-width: 1000px)'>
+                    <div className={styles.moreText}>More</div>
+                    <Icon className={styles.arrowDown} name='long arrow down' color='yellow' size='big'/>
+                  </MediaQuery>
+                </MediaQuery>
+              </div>
+
+              {/* SECOND SECTION: ABOUT */}
+              <div id='about' className={styles.about}>
+                <Header as='h2' icon textAlign='center'>
+                  <Header.Content>
+                    <Divider horizontal><h1>About</h1></Divider>
+                  </Header.Content>
+                </Header>
+                <Container text>
+                  <h3>
+                    <strong>Innovative Collaboration is a consulting firm that cultivates cultural competency, diversity, and leadership.</strong>
+                  </h3>
+                </Container> 
+                <br/>
+                <Container style={{display: 'flex', justifyContent: 'center'}}>
+                  <Card style={{width: '95%'}}>
+                    <Divider horizontal style={{marginBottom: '35px'}}>Where we make a difference</Divider>
+                    <List vertical size='huge' style={{display: 'block', margin: 'auto', padding: '10px', paddingBottom: '40px'}}>
+                        <List.Item style={{marginBottom: '20px'}}>
+                          <Icon name='graduation' size='big' color='purple'/>
+                          <List.Content style={{paddingLeft: 0}}>
+                            <List.Header>Higher Education</List.Header>
+                            Innovate academics
+                          </List.Content>
+                        </List.Item>
+                        <List.Item style={{marginBottom: '20px'}}>
+                          <Icon name='briefcase' size='big' color='orange'/>
+                          <List.Content>
+                            <List.Header>Businesses</List.Header>
+                            Grow your work environment
+                          </List.Content>
+                        </List.Item>
+                        <List.Item>
+                          <Icon name='users' size='big' color='blue'/>
+                          <List.Content>
+                            <List.Header>Teams</List.Header>
+                            Boost your team's potential
+                          </List.Content>
+                        </List.Item>
+                    </List>
+                  </Card>
+                </Container>
+              </div>
+
+        </div>
+      );
     }
 }
 

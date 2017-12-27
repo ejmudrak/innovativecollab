@@ -88,7 +88,7 @@ body {
   margin-left: 0.5em;
 
 	font-family: 'Righteous', 'Galano', sans-serif;
-	font-size: 8vw;
+	font-size: 6vw;
   width: 10em;
   line-height: 100%;
   word-wrap: break-word;
@@ -126,15 +126,7 @@ body {
 }
 
 /* Styling for responsiveness */
-@media all and (max-width: 100%) {
-
+@media all and (max-width: 985px) {
+  .heading { margin-top: 15px !important; }
 }
-@media only screen
-and (min-width: 900px) {
 
-}
-@media only screen
-and (min-width: 500px)
-and (max-width: 800px) {
-
-}

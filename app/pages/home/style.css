@@ -51,15 +51,10 @@ body {
 
 .about {
   width: 100% !important;
-  height: 75em;
   margin: 0;
-  color: white;
-
-
-  /*background-color: #00007f;*/
 }
 
-.about h1 { 
+.about h1, .about h3 { 
   color: white;
 }
 
@@ -101,7 +96,8 @@ body {
 
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
-
+  align-items: center;
+  
   width: 100%;
   position: absolute;
   top: 75%;
@@ -123,8 +119,8 @@ body {
 }
 
 /* Styling for responsiveness */
-@media all and (max-width: 100%) {
-
+@media all and (max-width: 985px) {
+  
 }
 @media only screen
 and (min-width: 900px) {

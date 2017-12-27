@@ -29,10 +29,14 @@ module.exports = {
       {
         test: /\.svg$/,
         loader: "url-loader?limit=10000&mimetype=image/svg+xml"
-    },
+      },
       {
         test: /\.jpe?g$/,
         loader: "url-loader?limit=10000&mimetype=image/jpeg"
+      },      
+      {
+        test: /\.png$/,
+        loader: "url-loader?limit=10000&mimetype=image/png"
       }
     ],
   },

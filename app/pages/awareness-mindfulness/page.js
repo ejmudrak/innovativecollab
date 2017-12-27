@@ -8,8 +8,7 @@ import React from 'react';
 import { browserHistory } from 'react-router';
 import styles from "./style.css";
 import MediaQuery from 'react-responsive';
-import { Container, Divider } from 'semantic-ui-react';
-
+import { Container, Divider, Segment } from 'semantic-ui-react';
 
 export default class AboutPage extends React.Component {
     constructor(props) {
@@ -21,11 +20,13 @@ export default class AboutPage extends React.Component {
                 <div className={styles.pageHeading}>Cultural Awareness & Mindfulness</div>
                 <div className={styles.headingLine} />
                 <Container text>
-                    <p>Innovative Collaborations is a consulting firm that cultivates cultural competency, diversity, and leadership for teams and work environments.</p>
-                </Container> 
-                <Divider section style={{marginLeft: '15em', marginRight: '15em'}}/>                
-                <Container text>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <Segment textAlign='center' size='huge' color='blue'><strong>To culturally be mindful and aware.</strong></Segment>
+                    <Segment size='large'>
+                        <p><strong>Mindfulness</strong> is a state of conscious awareness in which the individual is implicitly aware of the context and content of information.</p>
+                        <p>It is a state of openness to novelty in which the individual actively constructs categories and distinctions.</p>
+                        <p>In contrast, <i>mindlessness</i> is a state of mind characterized by an overreliance on categories and distinctions drawn in the past and in which the individual is context-dependent and, as such, is oblivious to novel (or simply alternative) aspects of the situation.</p>
+                        <p className={styles.source}>Langer, 1992: 289</p>
+                    </Segment>
                 </Container> 
             </div>
         );
