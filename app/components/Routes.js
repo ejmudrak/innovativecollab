@@ -14,7 +14,7 @@ import BiasPage from '../pages/bias/page';
 // Trying to build and deploy for Github pages? Make path="innovativecollab/" -- aka the repo name
 // Trying to develop and build normally? Make path="/"
 export default (
-  <Route path="/" component={App}>
+  <Route path="innovativecollab/" component={App}>
     <IndexRoute component={Home} />
     <Route path="home" component={Home} />
     <Route path="about" component={AboutPage} />
