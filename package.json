@@ -1,7 +1,7 @@
 {
-  "name": "innovative-collab",
+  "name": "innovativecollab",
   "description": "Site for cultural competency training firm",
-  "homepage": "https://ejmudrak.github.io/innovative-collab",
+  "homepage": "https://ejmudrak.github.io/innovativecollab",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --progress --colors --content-base app --port 8080",
     "build": "webpack -p --progress --config webpack.production.config.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ejmudrak/innovative-collab.git"
+    "url": "https://github.com/ejmudrak/innovativecollab.git"
   },
   "dependencies": {
     "material-ui": "^0.17.0",
@@ -30,8 +30,6 @@
     "gh-pages": "^0.12.0",
     "image-webpack-loader": "^3.3.0",
     "raw-loader": "^0.5.1",
-    "react-global-state": "^0.1.2",
-    "react-localstorage": "^0.3.1",
     "react-responsive": "^1.2.7",
     "react-router": "^2.0.0",
     "semantic-ui-react": "^0.67.2",
