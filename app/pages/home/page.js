@@ -82,7 +82,7 @@ export default class Home extends React.Component {
                 <Container style={{display: 'flex', justifyContent: 'center'}}>
                   <Card style={{width: '95%'}}>
                     <Divider horizontal style={{marginBottom: '35px'}}>Where we make a difference</Divider>
-                    <List vertical size='huge' style={{display: 'block', margin: 'auto', padding: '10px', paddingBottom: '40px'}}>
+                    <List size='huge' style={{display: 'block', margin: 'auto', padding: '10px', paddingBottom: '40px'}}>
                         <List.Item style={{marginBottom: '20px'}}>
                           <Icon name='graduation' size='big' color='purple'/>
                           <List.Content style={{paddingLeft: 0}}>
