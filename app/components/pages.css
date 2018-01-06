@@ -3,9 +3,9 @@
     min-height: 50rem;
     display: block;
     margin: auto;
-    margin-top: -40%;
     position: relative;
     z-index: 2;
+    margin-bottom: 10%;
 
     background-color: white;
     border-radius: 2px;
@@ -44,6 +44,11 @@
 	border-top: 5px solid #ffcd02;
 }
 
+.source {
+	text-align: right;
+	color: gray;
+}
+
 /* Styling for responsiveness */
 @media all and (max-width: 985px) {
 	.pageHeading { 
@@ -54,4 +59,10 @@
 	 .headingLine {
 	 	margin-top: -15px;
 	 }
+}
+
+@media all and (max-width: 500px) {
+	.mainCard {
+		width: 100%;
+	}
 }

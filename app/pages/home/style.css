@@ -2,10 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous|Quicksand');
 @import url('https://fonts.googleapis.com/css?family=Lato|Palanquin+Dark|Slabo+27px');
 
-@font-face {
-  font-family: 'Galano';
-  src: url('/assets/fonts/Galano Grotesque DEMO Bold.otf');
-}
+@import url('https://fonts.googleapis.com/css?family=Cormorant|Playfair+Display');
 
 body {
   overflow-x: hidden !important;
@@ -50,12 +47,22 @@ body {
 }
 
 .about {
+  position: relative;
+  top: 60%;
   width: 100% !important;
   margin: 0;
+  margin-top: -35em;
 }
 
-.about h1, .about h3 { 
+@import url('https://fonts.googleapis.com/css?family=Cormorant|Playfair+Display:900');
+
+
+h1, h2, h3 { 
   color: white;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
 }
 
 .aboutImage {
@@ -63,11 +70,21 @@ body {
   height: 12em !important;
 }
 
+.aboutItems {
+  margin-top: 2em !important;
+}
+
 .menuItem {
   /*font-family: 'Palanquin Dark';*/
   color: #ffffff !important;
   text-color: #ffffff !important;
   margin-right: 2em !important;
+}
+
+.contact {
+  position: relative;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 .menu {
@@ -79,7 +96,7 @@ body {
 	margin-top: 0.02em;
   margin-left: 0.5em;
 
-	font-family: 'Righteous', 'Galano', sans-serif;
+	font-family: 'Playfair Display', sans-serif;
 	font-size: 8vw;
   width: 10em;
   line-height: 100%;
@@ -102,12 +119,6 @@ body {
   position: absolute;
   top: 75%;
 }
-
-.aboutItems {
-  margin-top: 2em !important;
-}
-
-
 
 .gradient {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+51,207cca+100,7db9e8+100 */

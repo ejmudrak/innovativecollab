@@ -6,12 +6,12 @@ Author: Erik Mudrak - Fall 2017
 // Imports:
 import React from 'react';
 import { browserHistory } from 'react-router';
-import styles from "./style.css";
+import styles from "../../components/pages.css";
 import MediaQuery from 'react-responsive';
 import { Container, Divider, Image, Segment } from 'semantic-ui-react';
 
 
-export default class AboutPage extends React.Component {
+export default class EfficacyPage extends React.Component {
     constructor(props) {
         super(props);
     }

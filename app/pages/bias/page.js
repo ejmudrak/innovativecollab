@@ -6,7 +6,7 @@ Author: Erik Mudrak - Fall 2017
 // Imports:
 import React from 'react';
 import { browserHistory } from 'react-router';
-import styles from "./style.css";
+import styles from "../../components/pages.css";
 import MediaQuery from 'react-responsive';
 import { Container, Divider, Segment } from 'semantic-ui-react';
 

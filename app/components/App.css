@@ -2,12 +2,12 @@ body {
 	background: #00107b !important;
 }
 
+
 .mainCard {
     width: 80%;
     min-height: 50rem;
     display: block;
     margin: auto;
-    margin-top: -40%;
     position: relative;
     z-index: 2;
 

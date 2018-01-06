@@ -17,7 +17,7 @@ const aboutItems = [
     childKey: 0,
     image: '../../assets/logo-color.png',
     header: 'About',
-    description: 'Innovative Collaborations is a consulting firm that cultivates cultural competency, diversity, and leadership for teams and work environments',
+    description: 'Innovative Collaboration is a consulting firm that cultivates cultural mindfulness, diversity, and creative leadership.',
     meta: 'Want training? Contact us.',
   },
 ];
@@ -48,7 +48,7 @@ export default class Home extends React.Component {
 
       return (
           <div>
-              <div>
+{/*              <div>
                 <MediaQuery query='(min-device-width: 1224px)'>
                   <MediaQuery query='(min-width: 1000px)'>
                     <div className={styles.infoCards}>
@@ -64,7 +64,7 @@ export default class Home extends React.Component {
                     <Icon className={styles.arrowDown} name='long arrow down' color='yellow' size='big'/>
                   </MediaQuery>
                 </MediaQuery>
-              </div>
+              </div>*/}
 
               {/* SECOND SECTION: ABOUT */}
               <div id='about' className={styles.about}>
@@ -74,9 +74,9 @@ export default class Home extends React.Component {
                   </Header.Content>
                 </Header>
                 <Container text>
-                  <h3>
+                  <h2>
                     <strong>Innovative Collaboration is a consulting firm that cultivates cultural competency, diversity, and leadership.</strong>
-                  </h3>
+                  </h2>
                 </Container> 
                 <br/>
                 <Container style={{display: 'flex', justifyContent: 'center'}}>
@@ -88,6 +88,13 @@ export default class Home extends React.Component {
                           <List.Content style={{paddingLeft: 0}}>
                             <List.Header>Higher Education</List.Header>
                             Innovate academics
+                          </List.Content>
+                        </List.Item>                        
+                        <List.Item style={{marginBottom: '20px'}}>
+                          <Icon name='book' size='big' color='red'/>
+                          <List.Content>
+                            <List.Header>K-12</List.Header>
+                            Shape the next generation
                           </List.Content>
                         </List.Item>
                         <List.Item style={{marginBottom: '20px'}}>
@@ -108,6 +115,19 @@ export default class Home extends React.Component {
                   </Card>
                 </Container>
               </div>
+
+            {/* THIRD SECTION: CONTACT */}
+              <div className={styles.contact}>
+                <Header as='h2' icon textAlign='center'>
+                  <Header.Content>
+                    <Divider horizontal><h1>Contact</h1></Divider>
+                  </Header.Content>
+                </Header>
+                <Container style={{display: 'flex', justifyContent: 'center'}}>
+                  <h2>info@innovativecollaboration.org</h2>
+                </Container>
+              </div>
+              <Divider />
 
         </div>
       );

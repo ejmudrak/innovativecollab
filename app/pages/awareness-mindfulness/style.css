@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant|Playfair+Display:900');
+
 .mainCard {
     width: 80%;
     min-height: 50rem;
     display: block;
     margin: auto;
-    margin-top: -40%;
     position: relative;
     z-index: 2;
-
     background-color: white;
     border-radius: 2px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
