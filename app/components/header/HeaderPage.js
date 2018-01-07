@@ -34,8 +34,8 @@ export default class HeaderPage extends React.Component {
 
       return (
         <div className={activeItem !== 'home' ? styles.pagesMobileHeader : ""}>
-            {/* FIRST SECTION: HOME */}
-            <div id='home' className={activeItem === 'home' ? styles.landingBackground : ""}>
+          {/* FIRST SECTION: HOME */}
+          <div id='home' className={activeItem === 'home' ? styles.landingBackground : ""}>
             <MediaQuery query='(min-device-width: 985px)'>
               <Menu className={styles.menu} pointing secondary color={'yellow'}>
                 <Menu.Menu position='right'>
@@ -64,11 +64,11 @@ export default class HeaderPage extends React.Component {
               </Sidebar>
             </MediaQuery>
 
-              <div onClick={this.goHome}>
-                <h1 className={styles.heading}>Innovative Collaboration</h1>
-                {/*<img src={Logo} />*/}
-              </div>
+            <div onClick={this.goHome}>
+              <h1 className={styles.heading}>Innovative Collaboration</h1>
+              {/*<img src={Logo} />*/}
             </div>
+          </div>
         </div>
        );
     }

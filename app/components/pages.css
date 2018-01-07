@@ -5,11 +5,11 @@
     margin: auto;
     position: relative;
     z-index: 2;
-    margin-bottom: 10%;
 
     background-color: white;
     border-radius: 2px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-top: 15%;
 }
 
 
@@ -64,5 +64,7 @@
 @media all and (max-width: 500px) {
 	.mainCard {
 		width: 100%;
+		margin: auto;
+		margin-bottom: 10%;
 	}
 }
